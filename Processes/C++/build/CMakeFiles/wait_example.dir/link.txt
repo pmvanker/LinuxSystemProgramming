@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/wait_example.dir/wait_example.cpp.o -o wait_example 

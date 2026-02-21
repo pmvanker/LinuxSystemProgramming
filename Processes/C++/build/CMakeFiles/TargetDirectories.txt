@@ -1,0 +1,5 @@
+/home/pmvanker/LinuxSystemPrograming/Processes/C++/build/CMakeFiles/fork_example.dir
+/home/pmvanker/LinuxSystemPrograming/Processes/C++/build/CMakeFiles/exec_example.dir
+/home/pmvanker/LinuxSystemPrograming/Processes/C++/build/CMakeFiles/wait_example.dir
+/home/pmvanker/LinuxSystemPrograming/Processes/C++/build/CMakeFiles/edit_cache.dir
+/home/pmvanker/LinuxSystemPrograming/Processes/C++/build/CMakeFiles/rebuild_cache.dir
