@@ -1,5 +1,6 @@
 #include <unistd.h>
 #include <stdio.h>
+#include <sys/types.h>
 
 int main() {
     // Get process ID using getpid() - returns ID of calling process
