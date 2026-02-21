@@ -5,7 +5,8 @@
 #include <unistd.h>
 #include <sys/wait.h>
 
-struct msgbuf {
+// Define our own message buffer struct to avoid conflicts with system definition
+struct my_msgbuf {
     long mtype;
     char mtext[100];
 };
@@ -16,12 +17,12 @@ int main() {
 
     pid_t pid = fork();
     if (pid == 0) { // Child
-        struct msgbuf msg;
+        struct my_msgbuf msg;
         msgrcv(msgid, &msg, sizeof(msg.mtext), 1, 0);
         std::cout << "Child received: " << msg.mtext << std::endl;
         msgctl(msgid, IPC_RMID, NULL);
     } else { // Parent
-        struct msgbuf msg;
+        struct my_msgbuf msg;
         msg.mtype = 1;
         strcpy(msg.mtext, "Hello from parent");
         msgsnd(msgid, &msg, sizeof(msg.mtext), 0);
